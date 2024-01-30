@@ -6,7 +6,7 @@ import {
 import { createMarkupForPopup } from '../utils/markup/markup.js';
 import { refs } from '../refs/refs';
 
-// назва ключа для localStorage та змінна що зберігає обєкт поточної книги
+// назва ключа для localStorage та змінна, що зберігає обєкт поточної книги
 const STORAGE_KEY = 'bookList';
 // змінна що приймає обєкти поточної книги
 let newBook = {};
@@ -46,7 +46,7 @@ function OffFunction(evt) {
 function callPopupWindow(evt) {
   // перевічка того чи клік справді ввідбувся по елементу li
   if (!evt.target.closest('.book-cards-list-item')) {
-    refs.loaderForAllCategories.style.display = 'none';
+    // refs.loaderForAllCategories.style.display = 'none';
     return;
   }
   // Робить модальне вікно не прихованим
